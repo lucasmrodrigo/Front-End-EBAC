@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+	}
+
+	html {
+		font-size: 62,5%;
+	}
+
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		}
+
+	form div{
+		background-color: #006f82;
+		border: 3px solid white;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		margin-right: 10px;
+		margin-left: 10px;
+		padding: 10px;
+		color: white;
+	}
+
+	/* Style the header */
+
+	header {
+        font-size: 2rem;
+        text-align: center;
+		background-color: #006f82;
+		color: white;
+        width: 100%;
+        margin-top: -13px;
+        margin-bottom: -23px;
+		}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+        font-size: 2.1rem;
+		float: left;
+		width: 20%;
+		height: 45%;   
+		background: #006f82;
+		padding: 20px;
+		border-top: 7px solid white;
+		color: white;
+		}
+
+	.tabela {
+		height: auto;
+	}
+	
+	#ebac, #home, #formatacao-de-texto, #listas-e-links, #tabelas {
+		margin: 20px -11px;
+	}
+	
+	nav ul li {
+		margin-left: -9px;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		color: white;
+		}
+
+	article {
+		float: left;
+		padding: 20px;
+		width: 80%;
+		background-color: #006f82;
+		border-left: 7px solid white;
+		border-top: 7px solid white;
+		margin-bottom: 7px solid white;
+		color: white;
+		}
+
+	/* Clear floats after the columns */
+	section::after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+
+	/* Style the footer */
+	footer {
+        font-size: 2rem;
+		background-color: #006f82;
+		padding: 10px;
+		text-align: center;
+		color: white;
+		border-top: 7px solid white;
+        width: 100%;
+		}
+
+	[type="text"], [type="email"], textarea, label {
+		display: block;
+		width: 100%;
+	}
+
+	label {
+		margin-bottom: 5px;
+		color: white;
+	}
+
+	.input {
+		padding: 5px;
+		width: 100%;
+	}
+
+    table h2 {
+		color: white;
+	}
+
+	table {
+        font-size: 2rem;
+		border-collapse: collapse;
+		color: white;
+		width: 100%;
+		border: 0.01rem solid white;
+	}
+
+	table tbody tr:nth-child(odd) {
+		background-color: rgba(79, 79, 79, 9.0);
+	}
+
+	table th {
+
+		background-color: rgba(28, 28, 28, 9.0);
+	}
+
+	table tr {
+		height: 3rem;
+		width: 2rem;
+	}
+
+	table td {
+		border: 0.01rem solid white;
+		padding: 1rem;
+		width: 2rem;
+	}
+
+    #tabela {
+        margin-top: 20px;
+    }
+
+	
