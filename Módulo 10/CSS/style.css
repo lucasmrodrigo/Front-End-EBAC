@@ -1,0 +1,40 @@
+.cabecalho-container-1 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    background: rgb(240, 240, 240);
+}
+
+h1, h2, h3, h4, p {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2rem ;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+/* Estilos gerais */
+body {
+    font-family: monospace;
+}
+.cabecalho-container-1 {
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+}
+
+.item {
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(255, 85, 85);
+}
