@@ -1,40 +1,111 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial;
+}
+
+.container-principal {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    background-color: rgb(245, 245, 245);
+}
+
 .cabecalho-container-1 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 10px;
-    background: rgb(240, 240, 240);
+    background-color: rgb(245, 245, 245);
+    margin: 0px auto;
+    border-bottom: 2px solid #cccccc;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.8rem;
+}
+
+.item-navegacao {
+    padding: 5px;
+    border-right: 1px solid #cccccc;
+}
+
+.item-navegacao:last-child {
+    border: none;
+}
+
+a {
+    color: rgb(0, 0, 70);
+    padding: 5px;
+}
+
+.container-imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin-top: -30px;
+}
+
+.container-article {
+    text-align: justify;
 }
 
 h1, h2, h3, h4, p {
-    padding: 10px;
+    padding: 2px;
+    color: rgb(0, 0, 70);
 }
 
 h1 {
-    font-size: 2rem ;
+    text-align: center;
+    font-size: 2.5rem ;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    margin-top: 20px
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-top: 20px
 }
 
 p {
-    font-size: 1.2rem;
-}
-/* Estilos gerais */
-body {
-    font-family: monospace;
-}
-.cabecalho-container-1 {
-    margin: 0px auto;
-    border: 1px solid #cccccc;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 3px 0;
 }
 
-.item {
-    margin: 5px;
-    text-align: center;
-    background-color: rgb(255, 85, 85);
+p:last-child {
+    margin-bottom: 30px;
 }
+
+.container-article ol {
+    list-style: none;
+    margin: 7px 3px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 70);
+    line-height: 1.3;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #cccccc;
+    background-color: rgba(20, 20, 20, 0.950);
+    height: 70px;
+    font-size: 1.4rem;
+    color: white;
+}
+/* Estilos gerais */
+
