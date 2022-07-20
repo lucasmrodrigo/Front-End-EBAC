@@ -1,0 +1,256 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial;
+    background-color: rgb(245, 245, 245);
+}
+
+.container-principal {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 30px 50px;
+    background-color: rgba(20, 20, 20, 0.950);
+}
+
+.cabecalho-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(20, 20, 20, 0.950);
+    margin: 0px auto;
+    border-bottom: 2px solid #cccccc;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.8rem;
+}
+
+.item-navegacao {
+    padding: 5px;
+    border-right: 1px solid #cccccc;
+}
+
+.item-navegacao:last-child {
+    border: none;
+}
+
+a {
+    color: rgb(0, 0, 70);
+    padding: 5px;
+}
+
+.container-imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin-top: -30px;
+}
+
+.container-article {
+    text-align: justify;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, p {
+    padding: 2px;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 20px
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 3px 0;
+}
+
+p:last-child {
+    margin-bottom: 30px;
+}
+
+.container-article ol {
+    list-style: none;
+    margin: 7px 3px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #cccccc;
+    background-color: rgba(20, 20, 20, 0.950);
+    height: 70px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos gerais */
+
+@media (max-width: 600px) {
+
+    .container-principal {
+        padding: 20px;
+    }
+     
+    .cabecalho-container-1 {
+        flex-direction: column;
+    }
+
+    .navegacao {
+        display: flex;
+        margin-top: 10px;
+        font-size: 1.6rem;
+    }
+
+    .el-button {
+        max-width: 100% !important;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .container-imagem {
+        padding: 0;
+    }
+
+    .cabecalho-container-1 {
+        padding: 5px;
+    }
+
+    h1 {
+        margin-top: 25px;
+    }
+}
+
+.main-landing-page {
+    align-items: center;
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.container-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px 40px;
+    background-image: url(../images/banner.png);
+    background-repeat: round;
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+}
+
+.container-banner-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(50, 50, 50, 0.2);
+    border-radius: 5px;
+    padding: 30px 30px 0 30px;
+    color:rgb(0, 0, 70);    
+}
+
+.container-banner-texto h4 {
+    font-size: 2.3rem;
+    margin-bottom: 7px;
+}
+
+.container-banner-texto p {
+    font-size: 2rem;
+    margin-top: 7px;    
+}
+
+.botao-interesse {
+    text-align: center;
+    margin-top: 75px;
+    padding: 15px;
+    width: 20%;
+    border-radius: 25px;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    box-shadow: 5px 6px 8px rgba(50, 50, 50, 0.950);
+    letter-spacing: 1px;
+    background-color: rgb(0, 0, 70);
+}
+
+.titulo-1 {
+    margin: 30px 0;
+    font-size: 3rem;
+}
+
+.container-imagem-e-texto {
+    display: flex;
+    align-items: center;
+}
+
+.img-div {
+    width: 50%;
+    height: auto;
+}
+
+.texto-div {
+    padding: 20px 50px;
+    text-align: justify;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+@media (max-width: 765px) {
+
+    .botao-interesse {
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 2px;
+        padding: 7px;
+        width: 50%;
+        border-radius: 25px;
+        color: white;
+        font-size: 1rem;
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 5px 6px 8px rgba(50, 50, 50, 0.950);
+        letter-spacing: 1px;
+        background-color: rgb(0, 0, 70);
+    }  
+
+    .container-imagem-e-texto {
+        flex-direction: column;
+    }
+    
+}
