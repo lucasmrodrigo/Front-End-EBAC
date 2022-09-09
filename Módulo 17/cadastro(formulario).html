@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom(formulario).css">
+    <title> Bootstrap </title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="container" id="container-header"> 
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-3 col-6" id="img-logo">
+                    <img src="./images/logo.png" alt="logo" class="img-fluid" id="img-logo">
+                </div>
+
+                <div class="col-md-9 col-6">
+                    <ul class="nav justify-content-between">
+                        <li class="nav-item"> <a class="nav-link active" href="#top"> HOME </a> </li>
+                        <li class="nav-item"> <a class="nav-link active" href="#sobre-nos"> SOBRE </a> </li>
+                        <li class="nav-item"> <a class="nav-link active" href="#produtos"> PRODUTOS </a> </li>
+                        <li class="nav-item"> <a class="nav-link active" href="#contato"> CONTATO </a> </li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h2 class="text-center"> Cadastro </h2>
+                    <p class="text-center"> Faça seu cadastro para receber nossos produtos na sua casa!
+                    </p> 
+                </div>
+
+                <form class="form row">
+                    <div class="col-12 col-md-6">
+                        <h4 class="titulo-forms text-center"> Dados pessoais </h4>
+
+                        <div class="input-group">
+                            <input class="form-control col-12 col-md-6" type="text" name="nome" placeholder="Nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control col-12 col-md-6" type="text" name="email" placeholder="E-mail" required>
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control col-12 col-md-6" type="number" name="numero" placeholder="Telefone">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h4 class="titulo-forms text-center"> Endereço </h4>
+
+                        <div class="input-group row align-items-baseline endereco">
+                            <label for="cep"> </label>
+                            <input class="form-control info-endereco col-12 col-md-6" type="text" name="cep" id="cep" placeholder="CEP">
+                        </div>
+
+                        <div class="input-group row align-items-baseline endereco">
+                            <label for="estado"> </label>
+                            <select name="estado" id="estado" class="form-control col-12 col-md-6 info-endereco">  
+                                <option value="" class="info-endereco"> Selecione seu estado </option>
+                                <option value="rs"> RS </option>
+                                <option value="sc"> SC </option>
+                                <option value="ba"> BA </option>
+                            </select>
+                        </div>
+
+                        <div class="input-group row align-items-baseline endereco">
+                            <label for="cidade"> </label>
+                            <input class="form-control info-endereco col-12 col-md-6" type="text" name="cidade" id="cidade" placeholder="Cidade">
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-success col-2" id="btn-form-endereco"> Enviar </button>
+                        
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title"> Escolha o tamanho do seu herói ou vilão: </h3>
+                    <button class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h5> Tamanhos </h5>
+                    <table class="table table-hover table-striped">
+
+                        <thead>
+                            <tr>
+                                <th> Tamanho </th>
+                                <th> Valor (R$) </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td> P (7 cm) </td>
+                                <td> 35,00 </td>
+                            </tr>
+    
+                            <tr>
+                                <td> M (13 cm) </td>
+                                <td> 50,00 </td>
+                            </tr>
+    
+                            <tr>
+                                <td> G (17 cm) </td>
+                                <td> 60,00 </td>
+                            </tr>
+                        </tbody>
+                       
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fechar </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title"> Disponíveis apenas em tamanho único (os 3 personagens): </h3>
+                    <button class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h5> Tamanhos </h5>
+                    <table class="table table-hover table-striped">
+
+                        <thead>
+                            <tr>
+                                <th> Tamanho </th>
+                                <th> Valor (R$) </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td> ÚNICO (15 cm) </td>
+                                <td> 110,00 </td>
+                            </tr>
+                        </tbody>
+                       
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fechar </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title"> Disponível apenas em tamanho único: </h3>
+                    <button class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h5> Tamanhos </h5>
+                    <table class="table table-hover table-striped">
+
+                        <thead>
+                            <tr>
+                                <th> Tamanho </th>
+                                <th> Valor (R$) </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td> ÚNICO (10 cm) </td>
+                                <td> 40,00 </td>
+                            </tr>
+                        </tbody>
+                       
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fechar </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="./bootstrap/js/bootstrap.bundle.min.js"> </script>
+</body>
+
+</html>
