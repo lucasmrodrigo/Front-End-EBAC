@@ -16,6 +16,7 @@ header {
     background-color: rgb(255, 0, 255, 0.150);
 }
 
+
 #titulo-produtos {
     text-align: center;
 }
@@ -74,6 +75,9 @@ input {
         margin: 0 auto;
     }
 
+    .row {
+        margin-right: 12px !important;
+    }
     
 }
 
