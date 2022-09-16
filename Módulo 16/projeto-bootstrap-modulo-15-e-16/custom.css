@@ -3,13 +3,21 @@ header {
 }
 
 #img-logo {
-    max-width: 5rem;
+    max-width: 7rem;
     height: auto;
-    padding: 10px;
+    padding: 0.7rem;
 }
 
 .nav-link {
     color: white;
+}
+
+.title-carousel {
+    background-color: rgb(255, 0, 255, 0.150);
+    font-size: 5rem;
+    margin: 0 0 2rem;
+    padding: 1.5rem;
+    border-radius: 100%;
 }
 
 #sobre-nos {
@@ -30,8 +38,8 @@ header {
 }
 
 .img-produto {
-    width: 25em;
-    height: 14rem;
+    width: 28em;
+    height: 20rem;
     margin: 0.8rem 0;
 }
 
@@ -49,11 +57,12 @@ section {
 }
 
 input {
-    margin: 0.5rem;
+    margin: 1rem;
+    border-radius: 5px !important;
 }
 
 #btn-form {
-    margin: 0.5rem;
+    margin: 1rem 0;
 }
 
 .card {
@@ -61,7 +70,46 @@ input {
     margin: 10px;
 }
 
-@media(max-width: 780px) {
+@media(max-width: 769px) {
+
+    .img-produto {
+        height: 14rem;
+    }
+
+    .title-carousel {
+        font-size: 5rem;
+    }
+
+}
+
+@media(max-width: 425px) {
+
+    .itens-1 {
+        display: none !important;
+    }
+
+    .title-carousel {
+        font-size: 2.5rem;
+    }
+
+    .title-sobrenos{
+        margin-left: 2rem;
+    }
+
+    .txt-sobrenos {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    .img-sobrenos {
+        margin-left: 0.6rem;
+    }
+
+    #produtos {
+        margin-left: 0.2rem;
+    }
+    
     .card {
         width: 100%;
     }
