@@ -123,7 +123,7 @@ a {
 /* Banner Style */
 .banner {
 	margin-top: 50px;
-	background-image: url(./images/banner-bg.jpg);
+	background-image: url(./images/banner-1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 150px 0px;
@@ -667,6 +667,38 @@ a {
 	transition: all 0.5s;
 	box-shadow: none;
 	border: none;
+}
+
+#img-logo {
+	max-width: 300px;
+	height: auto;
+}
+
+#navbarResponsive {
+	margin-left: 15%;
+	margin-bottom: 5%;
+}
+
+a.nav-link {
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 1rem !important;
+}
+
+#headerManual {
+	justify-content: space-around !important;
+}
+
+a.row.navbar-brand {
+	margin: 0px;
+	padding: 5px;
+	align-items: center !important;
+	
+}
+
+ul.navbar-nav.ml-auto {
+	padding: 0;
+	margin-top: -30px;
 }
 
 /* Responsive Style */
