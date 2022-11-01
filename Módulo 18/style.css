@@ -222,6 +222,35 @@ a {
 	}
 }
 
+@media (max-width: 768px) {
+	.items-line {
+		max-width: 235px;
+		height: auto;
+	}
+
+	.featured-item img {
+		height: 155px;
+	}
+}
+
+@media (max-width: 425px) {
+
+	.items-line {
+		max-width: 90vw;
+		margin: 5px auto;
+		height: auto;
+	}
+
+	.featured-item img {
+		height: 200px;
+	}
+
+	.owl-carousel .featured-item img {
+		height: 90px;
+	}
+}
+
+
 /* Subscribe Style */
 .subscribe-form {
 	background-color: #3a8bcd;
