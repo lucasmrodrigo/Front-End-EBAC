@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container justify-content-between align-items-center" id="headerManual">
-            <a class="row navbar-brand align-content-center" href="#" ><img src="./images/header-logo-1.png" id="img-logo" alt="LOGO AQUI"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="row navbar-brand align-content-center" href="#"><img src="./images/header-logo-1.png"
+                    id="img-logo" alt="LOGO AQUI"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="row collapse navbar-collapse" id="navbarResponsive">
@@ -28,16 +31,16 @@
                         <a class="nav-link" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#promocao">Promoção</a>
+                        <a class="nav-link nav-modal-open" href="#" rel="sobre">BeFenix</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link nav-modal-open" href="#" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <div class="banner">
         <div class="container">
             <div class="row">
@@ -45,13 +48,14 @@
                     <div class="caption">
                         <h2>BeFenix, renascendo o simples! </h2>
                         <div class="line-dec"></div>
-                        <p>A BeFenix nasceu com o intuito de trazer de volta a simplicidade, sem perder o estilo e a beleza.</p>
+                        <p>A BeFenix nasceu com o intuito de trazer de volta a simplicidade, sem perder o estilo e a
+                            beleza.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div id="promocao" class="featured-items">
         <div class="container">
             <div class="row">
@@ -206,7 +210,7 @@
         </div>
     </div>
 
-    <div class="subscribe-form" id="contato">
+    <div class="subscribe-form" id="receber-novidades">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -223,7 +227,8 @@
                                 <div class="row">
                                     <div class="col-md-7">
                                         <fieldset>
-                                            <input type="text" name="email" id="email" class="form-control" placeholder="E-mail...">
+                                            <input type="text" name="email" id="email" class="form-control"
+                                                placeholder="E-mail...">
                                         </fieldset>
                                     </div>
                                     <div class="col-md-5">
@@ -239,7 +244,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -272,23 +277,60 @@
             </div>
         </div>
     </div>
-    
+
     <div class="sub-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright-text">
-                        <p>WebStore &copy; Todos os direitos reservados
-                        </div>
+                        <p>WebStore &copy; Todos os direitos reservados </p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <script src="../jquery/jquery-3.6.1.min.js"></script>
-        <script src="./bootstrap/js/bootstrap.min.js"></script>
-        <script src="./owl.js"></script>
-        <script src="./custom-index.js"></script>
+    </div>
+
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Modal title </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="visually-hidden">
+        <form action="post" class="form">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Name</label>
+              <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+              <small id="helpNome" class="text-muted">
+                Digite um nome válido
+              </small>
+            </div>
+        </form>
+    </div>
+
+    <div id="sobre" class="visually-hidden">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, cupiditate aut pariatur laboriosam dicta dolorum aperiam hic, 
+            accusantium consequatur possimus consectetur, nesciunt exercitationem in ducimus aliquid nemo corrupti? Blanditiis, debitis!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nam explicabo velit provident nesciunt ad tempore placeat laboriosam 
+            maxime cum temporibus laudantium eligendi hic unde et. Cum mollitia assumenda fugiat.
+        </p>
+    </div>
+
+    <script src="./jquery/jquery-3.6.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./owl.js"></script>
+    <script src="./custom-index.js"></script>
 
 </body>
 
